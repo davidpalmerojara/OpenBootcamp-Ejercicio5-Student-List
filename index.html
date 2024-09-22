@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="icon" type="image/x-icon" href="./favicon.ico">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/48b97c287e.js" crossorigin="anonymous"></script>
+   <title>Alumnos</title>
+</head>
+<body>
+   <div class="container">
+      <div class="full-table">
+         <div class="table-controls">
+            <h2>Alumnos</h2>
+            <div class="table-input">
+               <i class="input-icon fa-solid fa-magnifying-glass" onfocus='setActive()' onfocusout='setActive()'></i>
+               <input id='myInput' onkeyup='searchTable()' onfocus='setActive()' onfocusout='setActive()' type='text'
+                  placeholder="Buscar por Nombre, Email o Palabra clave...">
+            </div>
+         </div>
+         <section class="table-container">
+            <table id="table" class="table">
+               <thead>
+                  <tr>
+                     <th onclick="sortTable(0)">NOMBRE <i class="fas fa-sort-alpha-down"></i></th>
+                     <th onclick="sortTable(1)">CIUDAD <i class="fas fa-sort-alpha-down"></i></th>
+                     <th onclick="sortTable(2)">PAÍS <i class="fas fa-sort-alpha-down"></i></th>
+                     <th onclick="sortTable(3)">TELÉFONO <i class="fa-solid fa-arrow-down-1-9"></i></th>
+                     <th onclick="sortTable(4)">CORREO ELECTRÓNICO <i class="fas fa-sort-alpha-down"></i></th>
+                     <th onclick="sortTable(5)">ETIQUETAS <i class="fas fa-sort-alpha-down"></i></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Álvaro Sánchez Monteagudo</td>
+                     <td>Valencia</td>
+                     <td>España</td>
+                     <td>+34 657 85 25 46</td>
+                     <td class="email-column">smonteagudo@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">HTML&CSS</div>
+                        <div class="tag">ANGULAR</div>
+                        <div class="tag">+4</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Amparo Herrera Climent</td>
+                     <td>Sevilla</td>
+                     <td>España</td>
+                     <td>+34 689 25 48 65</td>
+                     <td class="email-column">hcliment@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">ANGULAR</div>
+                        <div class="tag">REACT</div>
+                        <div class="tag">+2</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Ana Gutierrez Lozano</td>
+                     <td>Valencia</td>
+                     <td>España</td>
+                     <td>+34 925 65 87 65</td>
+                     <td class="email-column">glozano@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">ANGULAR</div>
+                        <div class="tag">REACT</div>
+                        <div class="tag">+2</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Antonio Miguel Lacunza</td>
+                     <td>Madrid</td>
+                     <td>España</td>
+                     <td>+34 658 95 24 56</td>
+                     <td class="email-column">mlacunza@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">ANGULAR</div>
+                        <div class="tag">HTML&CSS</div>
+                        <div class="tag">+3</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Antonio Delgado Jimeno</td>
+                     <td>Gijón</td>
+                     <td>España</td>
+                     <td>+34 925 65 54 25</td>
+                     <td class="email-column">djimeno@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">HTML&CSS</div>
+                        <div class="tag">REACT</div>
+                        <div class="tag">+1</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Belén Jerez Rivera</td>
+                     <td>Barcelona</td>
+                     <td>España</td>
+                     <td>+34 697 82 95 24</td>
+                     <td class="email-column">jrivera@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">ANGULAR</div>
+                        <div class="tag">HTML&CSS</div>
+                        <div class="tag">+4</div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Carla Barroso Soriano</td>
+                     <td>Valencia</td>
+                     <td>España</td>
+                     <td>+34 958 65 41 54</td>
+                     <td class="email-column">bsoriano@gmail.com</td>
+                     <td class="tags">
+                        <div class="tag">REACT</div>
+                        <div class="tag">SYMFONY</div>
+                        <div class="tag">+5</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+      </div>
+   </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
